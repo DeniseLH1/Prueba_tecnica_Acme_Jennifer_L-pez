@@ -6,7 +6,7 @@ export class ServicioEmpleados{
     }
     //Registra un empleado
     crearEmpleado(datos) {
-        const { dpi, nombre, apellido, genero, email, telefono, direccion, ciudad,cargo, salario } = datos;
+        const { dpi, nombre, apellido, genero, email, telefono, direccion, ciudad, profesion, cargo, salario } = datos;
 
         // Valida que no halla otro empleado con el mismo DPI
         const empleadoExistente = this.empleados.find(emp => emp.dpi === dpi);
@@ -15,7 +15,7 @@ export class ServicioEmpleados{
         }
 
         const nuevoEmpleado = new Empleado(
-            dpi, nombre, apellido, genero, email, telefono, direccion, ciudad, cargo, salario
+            dpi, nombre, apellido, genero, email, telefono, direccion, ciudad,profesion, cargo, salario
         );
 
         this.empleados.push(nuevoEmpleado);
@@ -52,12 +52,13 @@ export class ServicioEmpleados{
         const telefono = nuevosDatos.telefono || empleadoActual.telefono;
         const direccion = nuevosDatos.direccion || empleadoActual.direccion;
         const ciudad = nuevosDatos.ciudad || empleadoActual.ciudad;
+        const profesion = nuevosDatos.profesion || empleadoActual.profesion;
         const cargo = nuevosDatos.cargo || empleadoActual.cargo;
         const salario = nuevosDatos.salario !== undefined ? nuevosDatos.salario : empleadoActual.salario;
 
         // Valida los datos actualizados
         const empleadoActualizado = new Empleado(
-            dpi, nombre, apellido, genero, email, telefono, direccion, ciudad, cargo, salario
+            dpi, nombre, apellido, genero, email, telefono, direccion, ciudad, profesion, cargo, salario
         );
 
         empleadoActualizado.id = empleadoActual.id;
