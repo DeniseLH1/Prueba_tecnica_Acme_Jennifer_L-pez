@@ -1,0 +1,23 @@
+{
+  "name": "prueba_tecnica_acme",
+  "version": "1.0.0",
+  "description": "Aplicaión para registrar empleados",
+  "keywords": [
+    "NodeJS"
+  ],
+  "homepage": "https://github.com/DeniseLH1/Prueba_tecnica_Acme_Jennifer_L-pez#readme",
+  "bugs": {
+    "url": "https://github.com/DeniseLH1/Prueba_tecnica_Acme_Jennifer_L-pez/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeniseLH1/Prueba_tecnica_Acme_Jennifer_L-pez.git"
+  },
+  "license": "ISC",
+  "author": "DeniseLH1",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
