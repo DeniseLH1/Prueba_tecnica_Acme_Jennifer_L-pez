@@ -1,5 +1,5 @@
 export class Empleado{
-    constructor(dpi,nombre,apellido,genero,email,telefono,direccion,ciudad,cargo, salario){
+    constructor(dpi,nombre,apellido,genero,email,telefono,direccion,ciudad,cargo,profesion, salario){
         this.id = crypto.randomUUID()
         this.dpi=dpi;
         this.nombre= nombre;
@@ -9,6 +9,7 @@ export class Empleado{
         this.telefono=telefono;
         this.direccion=direccion;
         this.ciudad=ciudad;
+        this.profesion= profesion;
         this.cargo=cargo;
         this.salario=Number(salario);
         this.datosobligatorios();
@@ -31,6 +32,9 @@ export class Empleado{
         }
         if (!this.ciudad || this.ciudad.trim()=== ''){
             throw new Error('La ciudad es un campo obligatorio')
+        }
+        if (!this.profesion || this.profesion.trim() === ''){
+            throw new Error('La profesion es un campo obligatorio')
         }
         if (!this.cargo || this.cargo.trim() === ''){
             throw new Error('El cargo es un campo obligatorio')
