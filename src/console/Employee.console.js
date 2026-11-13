@@ -1,10 +1,10 @@
 import * as readline from 'node:readline/promises';
 import { stdin as input, stdout as output } from 'node:process';
-import { EmployeeManager } from '../services/Employee.service.js';
+import { ServicioEmpleados} from '../services/Employee.service.js';
 
 export class ConsoleUI {
     constructor() {
-        this.manager = new EmployeeManager();
+        this.manager = new ServicioEmpleados();
         this.rl = readline.createInterface({ input, output });
     }
 
