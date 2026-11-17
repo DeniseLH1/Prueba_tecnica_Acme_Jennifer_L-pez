@@ -70,7 +70,7 @@ export class ConsoleUI {
         const salario = await this.rl.question('Salario: ');
 
         const nuevo = this.manager.crearEmpleado({
-            dpi, nombre, apellido, genero, email, telefono, direccion, ciudad, cargo, salario
+            dpi, nombre, apellido, genero, email, telefono, direccion, ciudad, profesion, cargo, salario
         });
 
         console.log(`\n ¡Empleado registrado con éxito! ID Único: ${nuevo.id}`);
