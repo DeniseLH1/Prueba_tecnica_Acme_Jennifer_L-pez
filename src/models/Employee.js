@@ -1,5 +1,5 @@
 export class Empleado{
-    constructor(dpi,nombre,apellido,genero,email,telefono,direccion,ciudad,cargo,profesion, salario){
+    constructor(dpi,nombre,apellido,genero,email,telefono,direccion,ciudad,profesion,cargo, salario){
         this.id = crypto.randomUUID()
         this.dpi=dpi;
         this.nombre= nombre;
