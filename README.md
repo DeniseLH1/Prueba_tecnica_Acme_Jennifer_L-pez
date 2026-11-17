@@ -25,7 +25,7 @@ El proyecto está organizado bajo una **Arquitectura en Capas** para separar res
 ​Abre tu terminal y ejecuta el siguiente comando para clonar el proyecto:
 
 ```text
-git clone 
+git clone https://github.com/DeniseLH1/Prueba_tecnica_Acme_Jennifer_L-pez.git
 ```
 2. Entrar al directorio del proyecto
 ​Navega a la carpeta recién clonada:
